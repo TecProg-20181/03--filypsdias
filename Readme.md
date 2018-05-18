@@ -88,3 +88,10 @@ o RGB, do inglês Red, Green e Blue (Vermelho, Verde e Azul).
 Cada componente varia de 0 a 255, sendo 0 a ausência daquela cor,
 e 255 a total presença daquela cor.
 
+Para rodar em MacOS basta digitar o seguinte comando:
+```$ gcc-4.9 main.c -std=c99``` 
+
+Caso a versão do seu MacOS não suporte o comando, tente experimentar este:
+
+```$  gcc-4.9 -std=c99 Library/* main.c -Iheaders -DLOG_USE_COLOR``` 
+
