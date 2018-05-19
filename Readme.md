@@ -1,4 +1,7 @@
-```OBS: Como conversado com a professora [Bruna Nayara](https://github.com/BrunaNayara), era permitido fazer o trabalho baseado no 01--filypsdias: Lena/Maritaca.ppm```
+```
+OBS: Como conversado com a professora Bruna Nayara,
+era permitido fazer o trabalho baseado no 01--filypsdias: Lena/Maritaca.ppm
+```
 
 # Photopobre
 O projeto aceita uma imagem no formato PPM como entrada e opera sobre ela.
