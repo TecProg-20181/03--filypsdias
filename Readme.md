@@ -1,3 +1,5 @@
+```OBS: Como conversado com a professora [Bruna Nayara](https://github.com/BrunaNayara), era permitido fazer o trabalho baseado no 01--filypsdias: Lena/Maritaca.ppm```
+
 # Photopobre
 O projeto aceita uma imagem no formato PPM como entrada e opera sobre ela.
 As operações realizadas são:
@@ -99,4 +101,3 @@ Caso a versão do seu MacOS não suporte o comando, tente experimentar este:
 
 É normal aparecer alguns ```warnings``` dependendo da sua versão do sistema operacional e compilador gcc. 
 Não se preocupe, o programa funcionará normalmente.
-
