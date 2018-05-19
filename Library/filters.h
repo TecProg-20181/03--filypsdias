@@ -1,7 +1,8 @@
 #ifndef FILTERS_H_
 #define FILTERS_H_
-#include "pixel.h"
 #include <stdio.h>
+#include "pixel.h"
+#include "macrologger.h"
 
 Image scaleInGray(Image image);
 Image sepia(Image image);

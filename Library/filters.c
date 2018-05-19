@@ -1,6 +1,7 @@
 #include "filters.h"
 
 Image scaleInGray(Image img) {
+    LOG_INFO("SCALE IN GRAY EFFECT STARTED");
     for (unsigned int row = 0; row < img.height; ++row) {
         for (unsigned int column = 0; column < img.width; ++column) {
             int average = img.pixel[row][column][RED] +
@@ -18,6 +19,7 @@ Image scaleInGray(Image img) {
 
 
 Image sepia(Image img) {
+    LOG_INFO("SEPIA EFFECT STARTED");
     for (unsigned int row = 0; row < img.height; ++row) {
         for (unsigned int column = 0; column < img.width; ++column) {
             
@@ -42,7 +44,7 @@ Image sepia(Image img) {
 }
 
 Image blur(Image img) {
-
+        LOG_INFO("BLUR EFFECT STARTED");
         int magnitude = 0;
         scanf("%d", &magnitude);
 
@@ -71,6 +73,7 @@ Image blur(Image img) {
 
 
 Image rotate90Right(Image img) {
+    LOG_INFO("ROTATE EFFECT STARTED");
     Image rotated;
 
     rotated.width = img.height;
@@ -98,6 +101,7 @@ Image rotate(Image img) {
 }
 
 Image mirroringImage(Image img) {
+    LOG_INFO("MIRROR EFFECT STARTED");
     int horizontal = 0;
     scanf("%d", &horizontal);
 
@@ -138,6 +142,7 @@ Image mirroringImage(Image img) {
 }
 
 Image invertColors(Image img) {
+    LOG_INFO("INVERT COLORS EFFECT STARTED");
     for (unsigned int row = 0; row < img.height; ++row) {
         for (unsigned int column = 0; column < img.width; ++column) {
             img.pixel[row][column][RED] = 255 - img.pixel[row][column][RED];
@@ -149,6 +154,7 @@ Image invertColors(Image img) {
 }
 
 Image cutImage(Image img) {
+    LOG_INFO("CUT IMAGE EFFECT STARTED");
     int pix_width, pix_height;
     int width, height;
 

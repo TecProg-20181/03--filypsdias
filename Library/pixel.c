@@ -4,10 +4,10 @@
 
 // Print image.
 void printImage(Image img) {
-
+                LOG_INFO("PRINTING IMAGE");
                 // Print image's type.
                 printf("P3\n");
-
+                
                 // Print width, height/color of image.
 
                 printf("%u %u\n255\n", img.width, img.height);
@@ -26,7 +26,7 @@ void printImage(Image img) {
 
 // Read image
 Image readImage(Image img) {
-
+                LOG_INFO("STARTED readImage FUNCTION");
                 // Read image's type.
                 char image_type[4];
                 scanf("%s", image_type);
@@ -47,7 +47,7 @@ Image readImage(Image img) {
                         }
                 }
                 else {
-                        printf("This isn't a PPM file. Please try again");
+                        LOG_ERROR("This isn't a PPM file. Please try again");
                         assert(image_type[0] == 'P');
                 } 
     return img;
