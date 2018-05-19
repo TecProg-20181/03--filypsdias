@@ -91,7 +91,12 @@ e 255 a total presença daquela cor.
 Para rodar em MacOS basta digitar o seguinte comando:
 ```$ gcc-4.9 main.c -std=c99``` 
 
+
 Caso a versão do seu MacOS não suporte o comando, tente experimentar este:
 
-```$  gcc-4.9 -std=c99 Library/* main.c -Iheaders -DLOG_USE_COLOR``` 
+```$  gcc-4.9 -std=c99 Library/* main.c -ILibrary``` 
+
+
+É normal aparecer alguns ```warnings``` dependendo da sua versão do sistema operacional e compilador gcc. 
+Não se preocupe, o programa funcionará normalmente.
 

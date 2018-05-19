@@ -15,9 +15,9 @@ void printImage(Image img) {
 
                 for(unsigned int line = 0; line < img.height; ++line) {
                         for (unsigned int column = 0; column < img.width; ++column) {
-                                printf("%hu %hu %hu ", img.pixel[line][column][0],
-                                       img.pixel[line][column][1],
-                                       img.pixel[line][column][2]);
+                                printf("%hu %hu %hu ", img.pixel[line][column][RED],
+                                       img.pixel[line][column][GREEN],
+                                       img.pixel[line][column][BLUE]);
 
                         }
                         printf("\n");
@@ -40,9 +40,9 @@ Image readImage(Image img) {
                         // Read all pixels of image
                         for(unsigned int row = 0; row < img.height; ++row) {
                                 for(unsigned int column = 0; column < img.width; ++column) {
-                                        scanf("%hu %hu %hu", &img.pixel[row][column][0],
-                                              &img.pixel[row][column][1],
-                                              &img.pixel[row][column][2]);
+                                        scanf("%hu %hu %hu", &img.pixel[row][column][RED],
+                                              &img.pixel[row][column][GREEN],
+                                              &img.pixel[row][column][BLUE]);
                                 }
                         }
                 } 
