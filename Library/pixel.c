@@ -45,6 +45,10 @@ Image readImage(Image img) {
                                               &img.pixel[row][column][BLUE]);
                                 }
                         }
+                }
+                else {
+                        printf("This isn't a PPM file. Please try again");
+                        assert(image_type[0] == 'P');
                 } 
     return img;
 }

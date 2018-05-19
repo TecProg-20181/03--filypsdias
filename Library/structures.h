@@ -4,6 +4,7 @@
 
 #include <string.h>
 #include <math.h>
+#include <assert.h>
 #define RED 0
 #define GREEN 1
 #define BLUE 2
